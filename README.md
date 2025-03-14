@@ -117,6 +117,7 @@ Specifying the `--goerli` flag, however, will reconfigure your `geth` instance a
    `geth attach <datadir>/goerli/geth.ipc`. Windows users are not affected by
    this.
 
+
 *Note: Although some internal protective measures prevent transactions from
 crossing over between the main network and test network, you should always
 use separate accounts for play and real money. Unless you manually move
@@ -158,8 +159,7 @@ saving your blockchain as well as map the default ports. There is also an `alpin
 available for a slim version of the image.
 
 Do not forget `--http.addr 0.0.0.0`, if you want to access RPC from other containers
-and/or hosts. By default, `geth` binds to the local interface and RPC endpoints are not
-accessible from the outside.
+and/or hosts. By default, `geth` binds to the local interface and RPC endpoints are not accessible from the outside.
 
 ### Programmatically interfacing `geth` nodes
 
@@ -279,8 +279,7 @@ that other nodes can use to connect to it and exchange peer information. Make su
 replace the displayed IP address information (most probably `[::]`) with your externally
 accessible IP to get the actual `enode` URL.
 
-*Note: You could also use a full-fledged `geth` node as a bootnode, but it's the less
-recommended way.*
+*Note: You could also use a full-fledged `geth` node as a bootnode, but it's the less recommended way.*
 
 #### Starting up your member nodes
 
